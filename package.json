@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "tsx dist/server.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cross-env VITE_STANDALONE=true BACKEND_PORT=3001 tsx server.js",
     "client": "vite --port 3000 --host 0.0.0.0",
